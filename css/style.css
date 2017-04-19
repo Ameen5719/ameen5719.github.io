@@ -5,6 +5,6 @@ section {
 
 body {
     background-image: url(/images/bg.jpg);
-    background-size: auto;
+    background-size: 10000px,100vw;
 
 }
