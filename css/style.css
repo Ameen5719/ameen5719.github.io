@@ -1,9 +1,11 @@
 section {
-    display: none;
     padding-top: 50px;
+}
+.display {
+	display: none;
 }
 
 body {
-    background-image: url(/images/bg.jpg);
+    background-image: url(/images/background.jpg);
     height: 100%;
 }
