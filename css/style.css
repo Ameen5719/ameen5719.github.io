@@ -1,11 +1,8 @@
 section {
     display: none;
-    padding: 50px;
-    width: 100vw;
 }
 
 body {
     background-image: url(/images/bg.jpg);
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
+
 }
