@@ -8,28 +8,6 @@ $(function () {
     $("a#contact-nav").click(function () {
         $("section#about-me, section#skill").slideUp("fast");
         $("section#contact-me").slideDown("swing");
-
-
-
-
-        var ctx = $("#HTML_5").getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ["HTML 5"],
-                datasets: [{
-                    backgroundColor: [
-        "#2ecc71",
-        "#95a5a6",
-              ],
-                    data: [80, 20]
-    }]
-            }
-        });
-
-
-
-
     });
     $("a#about-nav").click(function () {
         $("section#skill, section#contact-me").slideUp("fast");
@@ -37,7 +15,7 @@ $(function () {
 
     });
 });
-/*var ctx = document.getElementById("HTML_5").getContext('2d');
+var ctx = document.getElementById("HTML_5").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
@@ -116,28 +94,3 @@ var myChart = new Chart(ctx, {
     }]
     }
 });
-
-$(function {
-    $("#about-nav").click(function {
-        $("#contact-me").slideup("fast");
-        $("#skill").slideup("fast");
-        $("#about-me").slidedown("swing");
-
-
-    });
-    $("#kill-nav").click(function {
-        $("#contact-me").slideup("fast");
-        $("#about-me").slideup("swing");
-        $("#skill").slidedown("swing");
-
-
-    });
-    $("#contact-nav-nav").click(function {
-        $("#about-me").slideup("swing");
-        $("#skill").slideup("fast");
-        $("#contact-me").slidedown("swing");
-
-
-    });
-
-});*/
