@@ -9,3 +9,7 @@ body {
     background-image: url(/images/slovenia-2209810_1920.jpg);
     height: 100%;
 }
+canvas{
+    height: 5px;
+    width: 5px;
+}
