@@ -1,19 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
+.navbar {
+	position: fixed;
+    display: none;
 }
-section {
-    padding-top: 50px;
+#sidenav {
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 0%;
+    color: black;
+
 }
-.display {
-	display: none;
+#sidenav li {
+    display: block;
+    margin: 10px;
+
+}
+#sidenav-toggle{
+	left: 90%;
 }
 
-body {
-    background-image: url(/images/slovenia-2209810_1920.jpg);
-    height: 100%;
+@media screen and (max-height: 320px) {
+    .navbar {display: none;}
+    #sidenav-toggle {
+	display: block;
 }
-.jumbotron {
-	border-radius: 25px;
-    background-color: 	rgba(255,255,255,0.5);
+
 }
