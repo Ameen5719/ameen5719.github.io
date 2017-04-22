@@ -4,13 +4,17 @@
 }
 section {
     padding-top: 50px;
+    width: 100%;
+    height: 100;
 }
 .display {
 	display: none;
 }
 
 body {
-    background-color:dimgray;
+    background-image:url(/images/bg.jpg);
+    background-position:fixed;
+    background-size:cover;
 }
 #sidenav-trigger {
     display: none;
@@ -26,7 +30,7 @@ body {
     z-index: 1;
     top: 0;
     right : 0;
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.75);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -55,9 +59,10 @@ body {
 
 .jumbotron {
 	border-radius: 25px;
-    background-color: 	rgba(255,255,255,0.5);
+    background-color: 	rgba(0, 0, 0, 0.35);
 }
-@media only screen and (max-width: 430px) {
+
+@media only screen and (max-width: 775px) {
     #navbar {
 	display: none;
 }
