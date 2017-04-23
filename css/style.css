@@ -2,72 +2,98 @@
     margin: 0;
     padding: 0;
 }
-section {
-    padding-top: 50px;
-    width: 100%;
-    height: 100;
+body{
+    background: none;
+    color: #f5f5f5;
 }
-.display {
-	display: none;
-}
-
-body {
-    background-image:url(/images/bg.jpg);
-    background-position:fixed;
-    background-size:cover;
-}
-#sidenav-trigger {
-    display: none;
-    position: fixed;
-    top:0;
-    margin-top: 10px;
-	left:95%;
-}
-.sidenav {
+html{
+    background-color: #222;
     height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
+.navbar-brand{
+    color: #f5f5f5;
+}
+.nav > li > a{
+    color: #f5f5f5;
+}
+.navbar-toggle{
+    background: #111;
+}
+.navbar-toggle .icon-bar{
+   background: #f5f5f5;
+}
+.nav > li > a:hover{
+    background: #111;
+}
+.video-setion{
+    height: 50px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+        object-fit: cover;
+}
+#video-elem {
+    width: 100%;
+    height: 50%;
+}
+vedio::-webkit-media-controls{
+    display: none !important;
+}
+#video-content {
+	position: absolute;
     top: 0;
-    right : 0;
-    background-color:rgba(0, 0, 0, 0.75);
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
+    left: 0;
     right: 0;
-    font-size: 36px;
-    margin-left: 50px;
+    bottom: 0;
 }
-
+.container .jumbotron, .container-fluid .jumbotron{
+    padding-left: 0;
+    padding-right: 0;
+}
 .jumbotron {
-	border-radius: 25px;
-    background-color: 	rgba(0, 0, 0, 0.35);
+	background: none;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.gallery-title {
+	padding: 10px 15px 10px 0;
+    font-weight: bold;
+}
+.gallery-item img {
+	-webkit-filter: greayscale(50%);
+    filter: grayscale(50%);
+}
+.gallery-item img:hover {
+	-webkit-filter: greayscale(1%);
+    filter: grayscale(1%);
+}
+#propic{
+    width: 200px;
 }
 
-@media only screen and (max-width: 775px) {
-    #navbar {
+@media (max-width: 992px){
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+    #video-content {
+	position: static;
+}
+    video {
 	display: none;
 }
-    #sidenav-trigger{
-        display: block;
+}
+@media (max-width: 768px){
+    .jumbotron h1 {
+        font-size: 40px;
     }
+    .jumbotron p {
+        font-size: 20px;
+    }
+    .thumbnail{
+    height:300px;
+    width: 300px;
+    margin:5px;
 }
 }
