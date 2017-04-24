@@ -12,15 +12,29 @@ $(document).ready(function () {
         $(".gallery-filter li").removeClass("active");
         $(this).closest("li").addClass("active");
     });
+    $("section#about").slideDown("fast");
+    $("a#skill-nav").click(function () {
+        $("section#about, section#contact").slideUp("fast");
+        $("section#skill").slideDown("swing");
+
+    });
+    $("a#contact-nav").click(function () {
+        $("section#about, section#skill").slideUp("fast");
+        $("section#contact").slideDown("swing");
+    });
+    $("a#about-nav").click(function () {
+        $("section#skill, section#contact").slideUp("fast");
+        $("section#about").slideDown("swing");
+    });
 });
-    var ctx = "polarchart";
-    var polarchart = new Chart(ctx, {
+var ctx = "polarchart";
+var polarchart = new Chart(ctx, {
     type: 'polarArea',
     data: {
 
 
         labels: [
-                    "HTML 5","CSS 3","BOOTSTRAP","JAVASCRIPT","JQUERY","ANGULARJS"
+                    "HTML 5", "CSS 3", "BOOTSTRAP", "JAVASCRIPT", "JQUERY", "ANGULARJS"
                     ],
         datasets: [{
             data: [90,
@@ -45,6 +59,6 @@ $(document).ready(function () {
                                         ]
         }]
 
-        }
-                   });
-             /**/
+    }
+});
+/**/
