@@ -40,13 +40,16 @@ html {
 .container-fluid .jumbotron {
     padding-left: 0;
     padding-right: 0;
-    height: 100vh;
 }
 
 .jumbotron {
     background: none;
     margin-top: 75px;
     margin-bottom: 75px;
+}
+#header {
+    height: 100vh;
+    widows: 100vw;
 }
 
 .gallery-title {
